@@ -1,7 +1,9 @@
 package com.gaurav.controller;
 
-import com.gaurav.response.StudentResponse;
-import org.springframework.beans.factory.annotation.Value;
+import com.gaurav.entity.Student;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/student/")	
 public class StudentController {
 	
+/*
 	//@Value("${app.name}")
 	@Value("${app.name:Default app name}")
 	String appName;
@@ -20,5 +23,6 @@ public class StudentController {
 		StudentResponse student = new StudentResponse("Ram","Chandra");
 		return student;
 	}
+*/
 
 }

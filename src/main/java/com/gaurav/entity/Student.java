@@ -1,29 +1,30 @@
 package com.gaurav.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+
+@Entity
 @Getter
 @Setter
-@Entity
-@Table(name="students")
+@Table(name = "students")
 public class Student {
 	
-	@Id	
-	@GeneratedValue		//@GeratedValue  for autoincreameted values in sql
-	@Column(name="id")
-	private long id;
+	@Id
+	@GeneratedValue
+	@Column(name = "id")
+	private Long id;
 	
-	@Column(name="firstname")
+	@Column(name = "firstname")
 	private String firstName;
 	
-	@Column(name="lastname")
+	@Column(name = "lastname")
 	private String lastName;
 
 }
